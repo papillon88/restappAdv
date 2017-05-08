@@ -1,5 +1,7 @@
 package com.papillon.resources;
 
+import com.papillon.datatypes.MyDate;
+
 import javax.ws.rs.GET;
 import javax.ws.rs.Path;
 import javax.ws.rs.PathParam;
@@ -14,7 +16,7 @@ public class DateResource {
 
     @GET
     @Produces(MediaType.TEXT_PLAIN)
-    public String getRequestedDate(@PathParam("datestring") String datestring){
-        return datestring;
+    public String getRequestedDate(@PathParam("datestring") MyDate mydate){
+        return mydate.toString();
     }
 }
