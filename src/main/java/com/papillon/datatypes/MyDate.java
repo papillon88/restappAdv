@@ -35,10 +35,6 @@ public class MyDate {
 
     @Override
     public String toString() {
-        return "MyDate{" +
-                "date=" + date +
-                ", month=" + month +
-                ", year=" + year +
-                '}';
+        return String.format("My Date : date=%d , month=%d , year=%d", date,month,year);
     }
 }
