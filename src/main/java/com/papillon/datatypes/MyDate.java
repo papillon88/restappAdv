@@ -8,6 +8,7 @@ public class MyDate {
     private int date;
     private int month;
     private int year;
+    private String locale;
 
     public int getDate() {
         return date;
